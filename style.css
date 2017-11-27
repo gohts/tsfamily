@@ -1,0 +1,422 @@
+/* 
+    IBM In-house {Web Coder} course Assignment Snippet.
+    CSS file.
+    For internal IBM use.
+*/
+
+
+/*  ----- HTML Body Styles -----  */
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #7f7f7f;
+  
+  /* For Padding for top navbar fixed  */
+  /* padding-top: 70px;  */
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive typography */
+html {
+    font-size: 14px;
+  }
+  
+  /* 
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 20px;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 28px;
+    } 
+  */
+
+/*  ----- Row Styles -----  */
+.greybackground {
+  background-color : rgba(0, 0, 0, 0.02);
+  }
+
+/*  ----- Card Styles -----  */
+.cardpadding
+{
+  padding-bottom : 40px;
+  padding-top : 10px;
+  padding-left : 10px;
+  padding-right : 10px;
+}
+
+/* Box-sizing */
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+/* LAYOUT - Responsive breakpoints */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {  
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {  
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {  
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {  
+    
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+
+/* GRID -  */
+
+.bkheight {
+  max-height: 250px;
+}
+
+/* CAROUSEL -  */
+
+.carousel-indicators li {
+  position: relative;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fh5co-heading {
+  margin-bottom: 30px;
+}
+.fh5co-heading h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+	color: #000;
+	font-family: "Raleway", Arial, sans-serif;
+	font-weight: 400;
+	margin: 0 0 30px 0;
+}
+
+
+.fh5co-cta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 7em 0;
+  position: relative;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin : auto 0px;  
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin : auto 0px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 15px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin : auto 0px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.image {
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Animation */
+
+.js .animate-box {
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Hover */
+.hvr-glow {
+  /* display: inline-block; */
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 10px rgba(225, 225, 0,0.9);
+}
+
+/* Rating Form */
+form .stars {
+  background: url("stars.png") repeat-x 0 0;
+  width: 150px;
+  margin: 0 auto;
+}
+ 
+form .stars input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+form .stars input[type="radio"].star-5:checked ~ span {
+  width: 100%;
+}
+form .stars input[type="radio"].star-4:checked ~ span {
+  width: 80%;
+}
+form .stars input[type="radio"].star-3:checked ~ span {
+  width: 60%;
+}
+form .stars input[type="radio"].star-2:checked ~ span {
+  width: 40%;
+}
+form .stars input[type="radio"].star-1:checked ~ span {
+  width: 20%;
+}
+form .stars label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0!important;
+  padding: 0!important;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form .stars label:hover ~ span {
+  background-position: 0 -30px;
+}
+form .stars label.star-5:hover ~ span {
+  width: 100% !important;
+}
+form .stars label.star-4:hover ~ span {
+  width: 80% !important;
+}
+form .stars label.star-3:hover ~ span {
+  width: 60% !important;
+}
+form .stars label.star-2:hover ~ span {
+  width: 40% !important;
+}
+form .stars label.star-1:hover ~ span {
+  width: 20% !important;
+}
+form .stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  background: url("stars.png") repeat-x 0 -60px;
+  -webkit-transition: -webkit-width 0.5s;
+  -moz-transition: -moz-width 0.5s;
+  -ms-transition: -ms-width 0.5s;
+  -o-transition: -o-width 0.5s;
+  transition: width 0.5s;
+}
+
+/*This selector refers to ALL <input> */
+input[type]{
+  
+    -webkit-appearance: none; /* removes browser override style on mac */
+    width: 60%;
+    /* font-size: 1.5rem; */
+    height: 2rem;
+    /*2. set the width to fill container: 100% */
+    /*3. increase font size to: 1.5rem */
+    /*4. increase height to: 2rem */
+  
+  }
+  
+  /*Select multiple selectors with a comma , */
+  /*input[type=text] selects <input type="text"> */
+  input[type=text], 
+  input[type=email]{
+    border-style: none;
+    border-bottom: 1px solid black;
+    /*5. remove existing border to: none*/
+    /*6. create an underline effect by setting a new border-bottom to: 1px solid black*/
+  
+  }
+  
+  /*input[type]:focus is a state of being used */
+  input[type=text]:focus, 
+  input[type=email]:focus{
+    border-style: none;
+    /* border-bottom:2px solid orangered; */
+    /* color: orangered; */
+    /*7. remove the default glow with outline:none */
+    /*8. set the border and text color to: orangered*/
+  
+  }
+  
+  /*submit button selector*/
+  input[type=submit]{
+    height: 3rem;
+    border-style: none;
+    background-color: black;
+    color: white;
+    /*9. increase the button height to: 3rem (double font size)*/
+    /*10. remove the bezel with border:none*/
+    /*11. set background color to: black and text to: white */
+  
+  }
+  
+  /*hovering state, similar to a:hover */
+  input[type=submit]:hover{
+    background-color: orangered;
+    /*12. set background color to: orangered */
+  
+  }
+  
+  /*this optional style removes the yellow background of chrome's autofill*/
+  input[type]:-webkit-autofill {
+  
+    box-shadow: 0 0 0px 1000px white inset;
+    
+  }
+  
